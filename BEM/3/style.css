@@ -23,14 +23,10 @@
     color: var(--hardest-grayscale-color);
     text-decoration: none;
     font-weight: 400;
-    display: inline-block;
-    position: relative;
 }
 
 .heading__chevron-right {
     margin-left: 20px;
-    position: absolute;
-    bottom: 0;
 }
 
 .breadcrumbs {
@@ -63,5 +59,4 @@
     text-decoration: underline;
     vertical-align: 7px;
     font-size: var(--desc---text---s);
-    line-height: var(--line-height-standart);
 }
