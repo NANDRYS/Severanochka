@@ -1,0 +1,44 @@
+.show,.checkbox{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--lightest-grayscale-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.show::after{
+    content: url(img/Shape\ \(Stroke\).png);
+    position: relative;
+    top: -12%;
+}
+
+.show:checked::after{
+    content: url(img/MaterialSymbolsAdd.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+    position: relative;
+    top: 4%;
+}
+
+.checkbox{
+    background-color: white;
+}
+
+
+
+.checkbox:checked::after{
+    content: url(img/mark.svg);
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+}
