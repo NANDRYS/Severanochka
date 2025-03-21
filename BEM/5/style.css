@@ -1,9 +1,5 @@
-body {
-    background-color: black;
-}
-
-.show,
-.checkbox {
+/* show */
+.show {
     background-color: var(--secondary-color);
     border: 1px solid var(--lightest-grayscale-color);
     display: flex;
@@ -31,11 +27,22 @@ body {
     top: 4%;
 }
 
+/* checkbox */
+.checkbox {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--lightest-grayscale-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
 .checkbox {
     background-color: white;
 }
-
-
 
 .checkbox:checked::after {
     content: url(img/mark.svg);
@@ -47,8 +54,8 @@ body {
     height: 22px;
     border-radius: 4px;
 }
-/* без js */
 
+/* без js */
 .counter {
     display: flex;
     width: 100px;
@@ -66,17 +73,17 @@ body {
     display: none;
 }
 
-.counter__img:active{
-    transform:translateY(-1px)
+.counter__img:active {
+    transform: translateY(-1px)
 }
 
-.counter__switches{
+.counter__switches {
     width: 30px;
     height: 28px;
     margin-left: 30px;
 }
 
-.counter__number{
+.counter__number {
     font-size: var(--desc---text---s);
     line-height: 30px;
     padding-left: 10px;
@@ -129,7 +136,7 @@ body {
 
 /* с js */
 
-.counterJs{
+.counterJs {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -140,7 +147,7 @@ body {
 }
 
 .counter__btn-plus,
-.counter__btn-minus{
+.counter__btn-minus {
     padding: 0;
     margin-bottom: 8px;
     width: 24px;
@@ -149,11 +156,46 @@ body {
     border: none;
 }
 
-.counter__num{
+.counter__num {
     color: #FFFFFF;
 }
 
 .counter__btn-plus:active,
-.counter__btn-minus:active{
+.counter__btn-minus:active {
     transform: translateY(-1px);
+}
+
+/* togle */
+
+.togle__switcher{
+    appearance: none;
+    width: 46px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 49px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.togle__switcher:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 1.5px;
+    left: 1px;
+    width:19px;
+    height: 19px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.togle__switcher:checked:after{
+    background-color: #FFFFFF;
+    transform: translateX(22px);
+}
+
+.togle__switcher:checked{
+    background-color: var(--secondary-color);
 }
