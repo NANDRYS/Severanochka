@@ -1,4 +1,9 @@
-.show,.checkbox{
+body {
+    background-color: black;
+}
+
+.show,
+.checkbox {
     background-color: var(--secondary-color);
     border: 1px solid var(--lightest-grayscale-color);
     display: flex;
@@ -10,14 +15,14 @@
     border-radius: 4px;
 }
 
-.show::after{
-    content: url(img/Shape\ \(Stroke\).png);
+.show::after {
+    content: url(img/minus.png);
     position: relative;
     top: -12%;
 }
 
-.show:checked::after{
-    content: url(img/MaterialSymbolsAdd.svg);
+.show:checked::after {
+    content: url(img/plus.svg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,13 +31,13 @@
     top: 4%;
 }
 
-.checkbox{
+.checkbox {
     background-color: white;
 }
 
 
 
-.checkbox:checked::after{
+.checkbox:checked::after {
     content: url(img/mark.svg);
     background-color: var(--secondary-color);
     display: flex;
@@ -41,4 +46,78 @@
     width: 22px;
     height: 22px;
     border-radius: 4px;
+}
+
+.counter {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.counter__plus,
+.counter__minus {
+    display: none;
+}
+
+.counter__switches{
+    width: 30px;
+    height: 28px;
+    margin-left: 30px;
+}
+
+.counter__number{
+    font-size: var(--desc---text---s);
+    line-height: 30px;
+    padding-left: 10px;
+    color: white;
+}
+
+.counter__slide {
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    height: 30px;
+    width: 30px;
+}
+
+.counter__switches--positions {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 14px;
+}
+
+.counter__switches--positions label:last-child {
+    position: absolute;
+    top: -1px;
+    left: 48px;
+}
+
+#control1:checked~.counter__slide {
+    transform: translateY(-5px);
+}
+
+#control2:checked~.counter__slide {
+    transform: translateY(-35px);
+}
+
+#control3:checked~.counter__slide {
+    transform: translateY(-65px);
+}
+
+#control4:checked~.counter__slide {
+    transform: translateY(-95px);
+}
+
+#control1:checked~.counter__switches .counter__switches--positions:nth-child(1),
+#control2:checked~.counter__switches .counter__switches--positions:nth-child(2),
+#control3:checked~.counter__switches .counter__switches--positions:nth-child(3),
+#control4:checked~.counter__switches .counter__switches--positions:nth-child(4) {
+    display: block;
 }
