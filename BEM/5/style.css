@@ -47,6 +47,7 @@ body {
     height: 22px;
     border-radius: 4px;
 }
+/* без js */
 
 .counter {
     display: flex;
@@ -63,6 +64,10 @@ body {
 .counter__plus,
 .counter__minus {
     display: none;
+}
+
+.counter__img:active{
+    transform:translateY(-1px)
 }
 
 .counter__switches{
@@ -99,25 +104,56 @@ body {
     left: 48px;
 }
 
-#control1:checked~.counter__slide {
+#counter--control1:checked~.counter__slide {
     transform: translateY(-5px);
 }
 
-#control2:checked~.counter__slide {
+#counter--control2:checked~.counter__slide {
     transform: translateY(-35px);
 }
 
-#control3:checked~.counter__slide {
+#counter--control3:checked~.counter__slide {
     transform: translateY(-65px);
 }
 
-#control4:checked~.counter__slide {
+#counter--control4:checked~.counter__slide {
     transform: translateY(-95px);
 }
 
-#control1:checked~.counter__switches .counter__switches--positions:nth-child(1),
-#control2:checked~.counter__switches .counter__switches--positions:nth-child(2),
-#control3:checked~.counter__switches .counter__switches--positions:nth-child(3),
-#control4:checked~.counter__switches .counter__switches--positions:nth-child(4) {
+#counter--control1:checked~.counter__switches .counter__switches--positions:nth-child(1),
+#counter--control2:checked~.counter__switches .counter__switches--positions:nth-child(2),
+#counter--control3:checked~.counter__switches .counter__switches--positions:nth-child(3),
+#counter--control4:checked~.counter__switches .counter__switches--positions:nth-child(4) {
     display: block;
+}
+
+/* с js */
+
+.counterJs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.counter__btn-plus,
+.counter__btn-minus{
+    padding: 0;
+    margin-bottom: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+.counter__num{
+    color: #FFFFFF;
+}
+
+.counter__btn-plus:active,
+.counter__btn-minus:active{
+    transform: translateY(-1px);
 }
