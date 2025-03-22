@@ -154,6 +154,8 @@
     height: 24px;
     background-color: transparent;
     border: none;
+    color: #FFFFFF;
+    margin-top: 5px;
 }
 
 .counter__num {
@@ -166,8 +168,7 @@
 }
 
 /* togle */
-
-.togle__switcher{
+.togle__switcher {
     appearance: none;
     width: 46px;
     height: 24px;
@@ -177,25 +178,33 @@
     transition: 0.3s;
 }
 
-.togle__switcher:after{
+.togle__switcher:after {
     content: "";
     display: inline-block;
     position: absolute;
     background-color: var(--secondary-color);
     top: 1.5px;
     left: 1px;
-    width:19px;
+    width: 19px;
     height: 19px;
-    /* border: 1px solid black; */
     border-radius: 50%;
     transition: 0.3s;
 }
 
-.togle__switcher:checked:after{
+.togle__switcher:checked:after {
     background-color: #FFFFFF;
     transform: translateX(22px);
 }
 
-.togle__switcher:checked{
+.togle__switcher:checked {
     background-color: var(--secondary-color);
+}
+
+/* range */
+.range{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 34px;
+    margin-top: 20px;
 }

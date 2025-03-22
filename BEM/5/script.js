@@ -1,25 +1,15 @@
-window.addEventListener('DOMContentLoaded', function () {
+const counter = document.querySelector(".counterJs");
+const counterNum = document.querySelector(".counter__num");
+let curentValue = parseInt(counterNum.textContent, 10);
 
-    const btnPlus = document.querySelector('.counter__btn-plus');
-    const btnMinus = document.querySelector('.counter__btn-minus');
-    const counterNum = document.querySelector('.counter__num');
-
-    btnPlus.addEventListener('click', function () {
-        clickPlus()
-    })
-    btnMinus.addEventListener('click', function () {
-        clickMinus()
-    })
-    function clickPlus() {
-        let curentValue = parseInt(counterNum.textContent, 10)
-        curentValue += 1
-        counterNum.textContent = curentValue
+counter.addEventListener("click", (e) => {
+  if (e.target.matches(".counter__btn-plus")) {
+    curentValue += 1;
+    counterNum.textContent = curentValue;
+  } else if (e.target.matches(".counter__btn-minus")) {
+    if (curentValue > 0) {
+      curentValue -= 1;
     }
-    function clickMinus() {
-        let curentValue = parseInt(counterNum.textContent, 10)
-        if (curentValue > 0) {
-            curentValue -= 1
-        }
-        counterNum.textContent = curentValue
-    }
-})
+    counterNum.textContent = curentValue;
+  }
+});

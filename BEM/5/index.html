@@ -9,12 +9,14 @@
     <title>Document</title>
 </head>
 
+<script src="https://unpkg.com/feather-icons"></script>
+
 <body>
 
     <input class="show" type="checkbox">
 
     <input class="checkbox" type="checkbox">
-<!-- блок couter css -->
+    <!-- блок couter css -->
     <div class="counter">
         <input class="counter__minus" name="switch" type="radio" id="counter--control1" checked>
         <input class="counter__plus" name="switch" type="radio" id="counter--control2">
@@ -28,52 +30,55 @@
         </div>
         <div class="counter__switches">
             <div class="counter__switches--positions">
-                <label  for="counter--control4">
+                <label for="counter--control4">
                     <img class="counter__img" src="img/minus.png" alt="">
                 </label>
-                <label  for="counter--control2">
+                <label for="counter--control2">
                     <img class="counter__img" src="img/plus.svg" alt="">
                 </label>
             </div>
             <div class="counter__switches--positions">
-                <label  for="counter--control1">
+                <label for="counter--control1">
                     <img class="counter__img" src="img/minus.png" alt="">
                 </label>
-                <label  for="counter--control3">
+                <label for="counter--control3">
                     <img class="counter__img" src="img/plus.svg" alt="">
                 </label>
             </div>
             <div class="counter__switches--positions">
-                <label  for="counter--control2">
+                <label for="counter--control2">
                     <img class="counter__img" src="img/minus.png" alt="">
                 </label>
-                <label  for="counter--control4">
+                <label for="counter--control4">
                     <img class="counter__img" src="img/plus.svg" alt="">
                 </label>
             </div>
             <div class="counter__switches--positions">
-                <label  for="counter--control3">
+                <label for="counter--control3">
                     <img class="counter__img" src="img/minus.png" alt="">
                 </label>
-                <label  for="counter--control1">
+                <label for="counter--control1">
                     <img class="counter__img" src="img/plus.svg" alt="">
                 </label>
             </div>
         </div>
     </div>
     <br>
-    <!-- Блок counter js -->
     <div class="counterJs">
-        <button class="counter__btn-minus"><img src="img/minus.png" alt="Кнопка минус"></button>
+        <i data-feather="minus" class="counter__btn-minus"></i>
         <span class="counter__num">0</span>
-        <button class="counter__btn-plus"><img src="img/plus.svg" alt="Кнопка плюс"></button>
-    </div>
-    <br>
-    <div class="togle">
-        <input class="togle__switcher" type="checkbox" name="switcher">
+        <i data-feather="plus" class="counter__btn-plus"></i>
+      </div>
+    <!-- Блок range -->
+    <div class="range">
+        <input class="range__max" type="range" min="0" max="100" step="1" value="100">
+        <input class="range__min" type="range" min="0" max="100" step="1" value="1">
     </div>
 
     <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 
 </html>
