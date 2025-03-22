@@ -32,31 +32,32 @@
 .breadcrumbs {
     font-family: var(--font-main);
     font-size: var(--desc---text---xs);
+    display: flex;
+    align-items: center;
 }
 
 .breadcrumbs__link {
     text-decoration: none;
     color: var(--onSurface-color);
-    display: inline-block;
 }
 
 .breadcrumbs__chevron-right {
     margin: 0 16px 0 16px;
-    vertical-align: -8px;
 }
 
 .breadcrumbs__text {
     color: var(--hard-grayscale-color);
-    display: inline-block;
 }
 
 .phone-number {
+    text-decoration: none;
     font-family: var(--font-main);
     color: var(--onSurface-color);
+    font-size: var(--desc---text---s);
 }
 
 .phone-number__number {
     text-decoration: underline;
     vertical-align: 7px;
-    font-size: var(--desc---text---s);
+    cursor: pointer;
 }
