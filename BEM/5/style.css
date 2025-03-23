@@ -9,6 +9,7 @@
     width: 24px;
     height: 24px;
     border-radius: 4px;
+    color: #FFFFFF;
 }
 
 .show::after {
@@ -29,7 +30,6 @@
 
 /* checkbox */
 .checkbox {
-    background-color: var(--secondary-color);
     border: 1px solid var(--lightest-grayscale-color);
     display: flex;
     justify-content: center;
@@ -40,12 +40,9 @@
     border-radius: 4px;
 }
 
-.checkbox {
-    background-color: white;
-}
+
 
 .checkbox:checked::after {
-    content: url(img/mark.svg);
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -201,7 +198,7 @@
 }
 
 /* range */
-.range{
+.range {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -210,100 +207,110 @@
     margin-top: 50px;
     margin-left: 0;
 }
-.range::before{
-      content: '';
-      display: block;
-      width: 147px;
-      height: 4px;
-      background-color: var(--secondary-color);
-      position: absolute;
-      border-radius: 2px;
-      margin-left: 5px;
-    }
-    .range__custom{
-      appearance: none;
-      pointer-events: none;
-      outline: none;
-      position: absolute;
-      top: 0;
-      background-color: transparent;
-      z-index: 0;
-      width:153px;
-    }
-    range__custome:focus {
-        outline: none;
-      }
-      .custom-range::-webkit-slider-runnable-track{
-        appearance: none;
-        height: 4px;
-        background-color: transparent;
-      }
-      .range__custom::-moz-range-track{
-        appearance: none;
-        height: 4px;
-        background-color: transparent;
-      }
-      .range__custom::-ms-track{
-        appearance: none;
-        height: 4px;
-        background-color: transparent;
-      }
-  
-      .range__custom::-webkit-slider-thumb{
-        appearance: none;
-        height: 34px;
-        width: 34px;
-        border-radius: 50%;
-        border: solid 2px #e8e7e6;
-        background-color:var(--secondary-color);
-        cursor: grab;
-        pointer-events: auto;
-        z-index: 1;
-      }
-      .range__custom::-moz-range-thumb{
-        appearance: none;
-        height: 34px;
-        width: 34px;
-        border-radius: 50%;
-        border: solid 2px #e8e7e6;
-        background-color:var(--secondary-color);
-        cursor: grab;
-        pointer-events: auto;
-        z-index: 1;
-      }
-      .range__custom::-ms-thumb{
-        appearance: none;
-        height: 24px;
-        width: 24px;
-        border-radius: 50%;
-        border: solid 2px #e8e7e6;
-        background-color: var(--secondary-color);
-        cursor: grab;
-        pointer-events: auto;
-        z-index: 1;
-      }
-  
-      .range__custom:hover::-webkit-slider-thumb{
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-      }
-      .range__custom:hover::-moz-range-thumb{
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-      }
-      .range__custom:hover::-ms-thumb{
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-      }
-  
-      .range__custom:active::-webkit-slider-thumb{
-        cursor: grabbing;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-      }
-      .range__custom:active::-moz-range-thumb{
-        cursor: grabbing;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-      }
-      .range__custom:active::-ms-thumb{
-        cursor: grabbing;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-      }
-    
-  
+
+.range::before {
+    content: '';
+    display: block;
+    width: 147px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+.range__custom {
+    appearance: none;
+    pointer-events: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    z-index: 0;
+    width: 153px;
+}
+
+range__custome:focus {
+    outline: none;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+    appearance: none;
+    height: 4px;
+    background-color: transparent;
+}
+
+.range__custom::-moz-range-track {
+    appearance: none;
+    height: 4px;
+    background-color: transparent;
+}
+
+.range__custom::-ms-track {
+    appearance: none;
+    height: 4px;
+    background-color: transparent;
+}
+
+.range__custom::-webkit-slider-thumb {
+    appearance: none;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: solid 2px #e8e7e6;
+    background-color: var(--secondary-color);
+    cursor: grab;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.range__custom::-moz-range-thumb {
+    appearance: none;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: solid 2px #e8e7e6;
+    background-color: var(--secondary-color);
+    cursor: grab;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.range__custom::-ms-thumb {
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: solid 2px #e8e7e6;
+    background-color: var(--secondary-color);
+    cursor: grab;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.range__custom:hover::-webkit-slider-thumb {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.range__custom:hover::-moz-range-thumb {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.range__custom:hover::-ms-thumb {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.range__custom:active::-webkit-slider-thumb {
+    cursor: grabbing;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.range__custom:active::-moz-range-thumb {
+    cursor: grabbing;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.range__custom:active::-ms-thumb {
+    cursor: grabbing;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
