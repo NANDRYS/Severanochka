@@ -18,7 +18,7 @@
     font-size: var(--desc---header---xl);
 }
 
-.heading_link {
+.heading__link {
     font-size: var(--desc---text---s);
     color: var(--hardest-grayscale-color);
     text-decoration: none;
@@ -27,6 +27,7 @@
 
 .heading__chevron-right {
     margin-left: 20px;
+    vertical-align: bottom;
 }
 
 .breadcrumbs {
