@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.label-sale_primary{
+.label-sale{
     display: inline-block;
     font-size: var(--desc---text---s);
     background-color: var(--primary-color);
