@@ -4,31 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="media.css" />
     <title>Северяночка</title>
   </head>
   <script src="https://unpkg.com/feather-icons"></script>
   <body>
-    <header>
-      <img class="header-logo-img" src="./images/light/severanochka-long.svg" alt="severanochka">
-      <button class="header-button header-button-catalog">Каталог</button>
-      <div class="header-container-search">
-        <input type="text" class="header-search-input" placeholder="Найти товар">
-        <button class="header-search-button"><i data-feather="search"></i></button>
-      </div>
-      <button class="header-button-menu" id="header_button_like"><i data-feather="heart"></i><p>Избранное</p></button>
-      <button class="header-button-menu" id="header_button_orders"><i data-feather="package"></i><p>Заказы</p></button>
-      <button class="header-button-menu" id="header_button_basket"><i data-feather="shopping-cart"></i><p>Корзина</p></button>
-      <button class="header-button header-button-login" id="button_login">Войти</button>
-    </header>
-    <main>
-      <section class="section-2"></section>
-      <section class="section-3"></section>
-      <section class="section-4"></section>
-      <section class="section-5"></section>
-      <section class="section-6"></section>
-    </main>
-    <footer></footer>
+        <div>
+            <button class="button button_secondary secondary">Войти</button>
+        </div>
+        <div>
+            <button class="button button__icon-left secondary"><i data-feather="menu"></i><span>Каталог</span></button>
+        </div>
+        <div>
+            <button class="button button_icon button_icon-right secondary"><span>Фильтр 4</span> <i data-feather="x"></i></button>
+        </div>
+        <div>
+            <button class="button button_muted secondary-muted">Подробнее</button>
+        </div>
+        <div>
+            <button class="button button_grayscale grayscale">д.Вертеп</button>
+            <button class="button button_grayscale grayscale">Очистить</button>
+        </div>
+        <div>
+            <button class="button button__grayscale button_icon button_icon-right grayscale"><span>Очистить фильтры</span> <i data-feather="x"></i></button>
+        </div>
+        <div>
+            <button class="button button_secondary-outline secondary-outline">В корзину</button>
+        </div>
+        <div>
+            <button class="button button_primary primary">Применить</button>
+        </div>
+        <div>
+            <button class="button button_primary-muted primary-muted">Отправить отзыв</button>
+        </div>
+        <div>
+            <button class="button button_primary button__icon-left primary"><i data-feather="shopping-cart"></i><span>В корзину</span></button>
+        </div>
   </body>
   <script>
     feather.replace();
