@@ -151,7 +151,7 @@
     width: 153px;
 }
 
-range__custome:focus {
+.range__custome:focus {
     outline: none;
 }
 
