@@ -43,6 +43,7 @@
 
 
 .checkbox:checked::after {
+    content: url(img/mark.svg);
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -52,88 +53,8 @@
     border-radius: 4px;
 }
 
-/* без js */
-.counter {
-    display: flex;
-    width: 100px;
-    height: 40px;
-    background-color: var(--secondary-color);
-    border-radius: 4px;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.counter__plus,
-.counter__minus {
-    display: none;
-}
-
-.counter__img:active {
-    transform: translateY(-1px)
-}
-
-.counter__switches {
-    width: 30px;
-    height: 28px;
-    margin-left: 30px;
-}
-
-.counter__number {
-    font-size: var(--desc---text---s);
-    line-height: 30px;
-    padding-left: 10px;
-    color: white;
-}
-
-.counter__slide {
-    position: absolute;
-    top: 12px;
-    left: 35px;
-    height: 30px;
-    width: 30px;
-}
-
-.counter__switches--positions {
-    display: none;
-    position: absolute;
-    top: 8px;
-    left: 14px;
-}
-
-.counter__switches--positions label:last-child {
-    position: absolute;
-    top: -1px;
-    left: 48px;
-}
-
-#counter--control1:checked~.counter__slide {
-    transform: translateY(-5px);
-}
-
-#counter--control2:checked~.counter__slide {
-    transform: translateY(-35px);
-}
-
-#counter--control3:checked~.counter__slide {
-    transform: translateY(-65px);
-}
-
-#counter--control4:checked~.counter__slide {
-    transform: translateY(-95px);
-}
-
-#counter--control1:checked~.counter__switches .counter__switches--positions:nth-child(1),
-#counter--control2:checked~.counter__switches .counter__switches--positions:nth-child(2),
-#counter--control3:checked~.counter__switches .counter__switches--positions:nth-child(3),
-#counter--control4:checked~.counter__switches .counter__switches--positions:nth-child(4) {
-    display: block;
-}
-
 /* с js */
-
-.counterJs {
+.counter {
     display: flex;
     justify-content: space-around;
     align-items: center;

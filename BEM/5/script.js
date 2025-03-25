@@ -1,4 +1,4 @@
-const counter = document.querySelector(".counterJs");
+const counter = document.querySelector(".counter");
 const counterNum = document.querySelector(".counter__num");
 let curentValue = parseInt(counterNum.textContent, 10);
 
