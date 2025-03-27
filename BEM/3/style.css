@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.heading {
+    color: var(--onSurface-color);
+    font-family: var(--font-main);
+    font-weight: bold;
+    line-height: var(--line-height-standart);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading_md {
+    font-size: var(--desc---header---m);
+}
+
+.heading_lg {
+    font-size: var(--desc---header---xl);
+}
+
+.heading__link {
+    font-size: var(--desc---text---s);
+    color: var(--hardest-grayscale-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.heading__chevron-right {
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+
+.breadcrumbs {
+    font-family: var(--font-main);
+    font-size: var(--desc---text---xs);
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__link {
+    text-decoration: none;
+    color: var(--onSurface-color);
+}
+
+.breadcrumbs__chevron-right {
+    margin: 0 16px 0 16px;
+}
+
+.breadcrumbs__text {
+    color: var(--hard-grayscale-color);
+}
+
+.phone-number {
+    text-decoration: none;
+    font-family: var(--font-main);
+    color: var(--onSurface-color);
+    font-size: var(--desc---text---s);
+}
+
+.phone-number__number {
+    text-decoration: underline;
+    vertical-align: 7px;
+    cursor: pointer;
+}
