@@ -1,10 +1,15 @@
-ghi/* переменные */
-
 :root {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     
+     /* переменные */
+
      --blank-color: #FFFF;
      --primary-color: #FF6633;
      --primary-muted-color: #FCD5BA;
      --secondary-color: #70C05B;
+     --secondary-muted-color: #E5FFDE;
      --onSurface-color: #414141;
      --onBackground-color: #291E0F;
      --BGPage-color: #FBF8EC;
