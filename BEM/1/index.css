@@ -1,4 +1,4 @@
-div {
+.container {
      margin-bottom: 15px;
  }
  
@@ -13,34 +13,34 @@ div {
  }
  
  .secondary {
-     background-color: #70C05B;
-     color: #FFFF;
+     background-color: var(--secondary-color);
+     color: var(--blank-color);
  }
  
  .secondary-muted {
-     background-color: #E5FFDE;
-     color: #70C05B;
+     background-color: var(--secondary-muted-color);
+     color: var(--secondary-color);
  }
  
  .grayscale {
-     background-color: #F3F2F1;
-     color: #606060;
+     background-color: var(--lightest-grayscale-color);
+     color: var(--hardest-grayscale-color);
  }
  
  .primary {
-     background-color: #FF6633;
-     color: #FFFF;
+     background-color: var(--primary-color);
+     color: var(--blank-color);
  }
  
  .primary-muted{
-     background-color: #FCD5BA;
-     color: #FF6633;
+     background-color: var(--primary-muted-color);
+     color: var(--primary-color);
  }
  
  .secondary-outline {
-     background-color: #FFFF;
-     color: #70C05B;
-     border: 1px solid #70C05B;
+     background-color: var(--blank-color);
+     color: var(--secondary-color);
+     border: 1px solid var(--secondary-color);
  }
  
  .button_secondary {
@@ -53,7 +53,7 @@ div {
      justify-content: flex-start;
  }
  
- .button__icon-left span {
+ .button__icon-left-text {
      flex-grow: 1;
      text-align: center;
  }
@@ -79,13 +79,13 @@ div {
  }
  
  .button__grayscale {
-     width: 180px;
-     height: 30px;
-     font-size: 16px;
+     width: 171px;
+     height: 32px;
+     font-size: 12px;
  }
  
  .button_secondary-outline {
-     width: 200px;
+     width: 256px;
  }
  
  .button_primary {
@@ -93,5 +93,5 @@ div {
  }
  
  .button_primary-muted {
-     width: 200px;
+     width: 188px;
  }
