@@ -18,7 +18,6 @@
 .star{
     width: 16px;
     height: 16px;
-    
 }
 .star_grayscale-hard{
     fill: var(--hard-grayscale-color);
