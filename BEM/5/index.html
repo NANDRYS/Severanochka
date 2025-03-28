@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>Document</title>
+</head>
+
+<script src="https://unpkg.com/feather-icons"></script>
+
+<body>
+
+    <input class="show" type="checkbox">
+
+    <input class="checkbox" type="checkbox">
+    <!-- Блок counter с js -->
+    <div class="counter">
+        <i data-feather="minus" class="counter__btn-minus"></i>
+        <span class="counter__num">0</span>
+        <i data-feather="plus" class="counter__btn-plus"></i>
+    </div>
+    
+    <!-- Блок togle -->
+     <div class="togle">
+        <input class="togle__switcher" type="checkbox">
+     </div>
+
+    <!-- Блок range -->
+    <div class="range">
+        <input class="range__custom" type="range" min="1" max="100" step="1" value="0">
+        <input class="range__custom" type="range" min="1" max="100" step="1" value="100">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
