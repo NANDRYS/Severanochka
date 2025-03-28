@@ -1,0 +1,196 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 150%;
+	font-family: var(--font-main);
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 40px;
+	width: 584px;
+	height: 200px;
+	position: relative;
+	border-radius: 4px;
+}
+
+.banner_primary-muted {
+	background-color: var(--primary-muted-color);
+	box-shadow: 2px 4px 16px 0 #CA936080;
+}
+
+.banner_secondary-muted {
+	background-color: #E5FFDE;
+}
+
+.banner__content {
+	width: 240px;
+}
+
+.banner__title {
+	font-size: var(--desc---text--bold---l);
+	margin-bottom: 6px;
+}
+
+.banner__text {
+	font-size: var(--desc---text---s);
+}
+
+.banner__image-forest {
+	width: 207px;
+	height: 138px;
+	border-radius: 10px;
+	box-shadow: 0 8px 47px 0 #C85A3582;
+	transform: rotateZ(13.8deg);
+}
+
+.banner__image-basket {
+	width: 193px;
+	height: 186px;
+	position: absolute;
+	top: 14px;
+	right: 42px;
+	z-index: 1;
+}
+
+/* Стили и позиции плюсиков */
+
+.banner__image-plus-tiny {
+	width: 9px;
+	height: 8px;
+}
+
+.banner__image-plus-small {
+	width: 12px;
+	height: 11px;
+}
+
+.banner__image-plus-medium {
+	width: 18px;
+	height: 17px;
+}
+
+.banner__image-plus-grow {
+	width: 27px;
+	height: 26px;
+}
+
+.banner__image-plus-big {
+	width: 33px;
+	height: 31px;
+}
+
+.banner__image-plus-titan {
+	width: 40px;
+	height: 39px;
+}
+
+.banner__image-plus-tiny-one {
+	position: absolute;
+	bottom: 16px;
+	left: 21px;
+}
+
+.banner__image-plus-small-two {
+	position: absolute;
+	top: 17px;
+	left: 178px;
+}
+
+.banner__image-plus-small-three {
+	position: absolute;
+	bottom: 22px;
+	left: 314px;
+	
+}
+
+.banner__image-plus-small-four {
+	position: absolute;
+	top: 14px;
+	right: 34px;
+}
+
+.banner__image-plus-small-five {
+	position: absolute;
+	bottom: 16px;
+	right: 5px;
+}
+
+.banner__image-plus-small-six {
+	position: absolute;
+	bottom: 21px;
+	right: 106px;
+}
+
+.banner__image-plus-medium-seven {
+	position: absolute;
+	top: 49px;
+	left: 320px;
+}
+
+.banner__image-plus-grow-eight {
+	position: absolute;
+	top: 17px;
+	right: 112px;
+}
+
+.banner__image-plus-big-nine {
+	position: absolute;
+	bottom: 67px;
+	right: 213px;
+}
+
+.banner__image-plus-titan-ten {
+	position: absolute;
+	bottom: 59px;
+	right: 29px;
+}
+
+/* Стили и позиции рублей */
+
+.banner__image-ruble-small {
+	width: 27px;
+	height: 30px;
+}
+
+.banner__image-ruble-medium {
+	width: 31px;
+	height: 33px;
+}
+
+.banner__image-ruble-big {
+	width: 50px;
+	height: 52px;
+}
+
+.banner__image-ruble-titan {
+	width: 54px;
+	height: 55px;
+}
+
+.banner__image-ruble-small-one {
+	position: absolute;
+	bottom: 22px;
+	right: 196px;
+}
+
+.banner__image-ruble-medium-two {
+	position: absolute;
+	bottom: 21px;
+	right: 56px;
+}
+
+.banner__image-ruble-big-three {
+	position: absolute;
+	top: 27px;
+	right: 34px;
+}
+
+.banner__image-ruble-titan-four {
+	position: absolute;
+	top: 14px;
+	right: 169px;
+}
