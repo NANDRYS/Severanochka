@@ -1,0 +1,97 @@
+.container {
+     margin-bottom: 15px;
+ }
+ 
+ .button {
+     width: 140px;
+     height: 40px;
+     border: none;
+     border-radius: 4px;
+     font-family: Rubik;
+     font-size: 18px;
+     cursor: pointer;
+ }
+ 
+ .secondary {
+     background-color: var(--secondary-color);
+     color: var(--blank-color);
+ }
+ 
+ .secondary-muted {
+     background-color: var(--secondary-muted-color);
+     color: var(--secondary-color);
+ }
+ 
+ .grayscale {
+     background-color: var(--lightest-grayscale-color);
+     color: var(--hardest-grayscale-color);
+ }
+ 
+ .primary {
+     background-color: var(--primary-color);
+     color: var(--blank-color);
+ }
+ 
+ .primary-muted{
+     background-color: var(--primary-muted-color);
+     color: var(--primary-color);
+ }
+ 
+ .secondary-outline {
+     background-color: var(--blank-color);
+     color: var(--secondary-color);
+     border: 1px solid var(--secondary-color);
+ }
+ 
+ .button_secondary {
+     width: 95px;
+ }
+ 
+ .button__icon-left {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+ }
+ 
+ .button__icon-left-text {
+     flex-grow: 1;
+     text-align: center;
+ }
+ 
+ .button_icon-right {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+ }
+ 
+ .button_icon-right span {
+     flex-grow: 1;
+     text-align: center;
+ }
+ 
+ .button_muted {
+     width: 150px;
+ }
+ 
+ .button_grayscale {
+     height: 50px;
+     font-size: 24px;
+ }
+ 
+ .button__grayscale {
+     width: 171px;
+     height: 32px;
+     font-size: 12px;
+ }
+ 
+ .button_secondary-outline {
+     width: 256px;
+ }
+ 
+ .button_primary {
+     width: 200px;
+ }
+ 
+ .button_primary-muted {
+     width: 188px;
+ }
