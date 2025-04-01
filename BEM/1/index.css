@@ -7,8 +7,8 @@
      height: 40px;
      border: none;
      border-radius: 4px;
-     font-family: Rubik;
-     font-size: 18px;
+     font-family: var(--font-main);
+     font-size: var(--desc---text---m);
      cursor: pointer;
  }
  
@@ -75,13 +75,13 @@
  
  .button_grayscale {
      height: 50px;
-     font-size: 24px;
+     font-size: var(--desc---text---l);
  }
  
  .button__grayscale {
      width: 171px;
      height: 32px;
-     font-size: 12px;
+     font-size: var(--desc---text---xs);
  }
  
  .button_secondary-outline {
