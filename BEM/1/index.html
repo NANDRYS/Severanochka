@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <title>Document</title>
 </head>
 <script src="https://unpkg.com/feather-icons"></script>
@@ -29,18 +30,38 @@
         <i class="button_icon-right" data-feather="x"></i>
     </button>
     <br>
-    <button class="button button_muted">
-        <span>
+    <button class="button ">
+        <span class="button_muted">
             Подробнее
         </span>
     </button>
     <br><br><br>
-    <button class="button button_grayscale">
-        д.Вертеп
+    <button class="button button_grayscale button_grayscale-padding">
+       <span>д.Вертеп</span> 
     </button>
-    <button class="button button_grayscale">
-        Очистить
+    <button class="button button_grayscale button_grayscale-padding">
+        <span >Очистить</span>
     </button>
+    <br><br><br>
+    <button class="button button_grayscale button__icon ">
+        <span class="button_padding-clear-filter">Очистить фильтр</span>
+        <i class="button_icon-right" data-feather="x"></i>
+    </button>
+    <br>
+    <button class="button button_secondary-outline">
+        В корзину
+    </button>
+<br><br><br>
+<button class="button button_primary button_padding-y">
+    <span class="button_apply">
+        Применить
+    </span>
+</button>
+<br><br><br>
+<button class="button button_primary button_icon ">
+    <i class="button_margin-cart" data-feather="shopping-cart"></i>
+    <span class="button_padding-x button_cart">В корзину</span>
+</button>
     <script>
         feather.replace();
     </script>
