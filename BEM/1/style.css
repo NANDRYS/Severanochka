@@ -79,11 +79,11 @@ body {
 
 .button_cart{
     padding: 0 83px;
-    vertical-align: 12px;
+    vertical-align: 8px;
 }
 
 .button_margin-cart{
-    margin: 8px 0px 8px 8px;
+    margin: 8px 0px 0px 8px;
 }
 
 .button:active {
