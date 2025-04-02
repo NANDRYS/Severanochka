@@ -36,25 +36,24 @@ body {
     margin: 8px 0px 8px 8px;
 }
 
-.button_size-katalog {
+.button_size-catalog {
     margin: 0 17px;
 }
 
 .button_icon-right {
-    margin: 8px 8px 8px 0;
-}
-
-.button_size-filter {
-    margin: 0 8px;
+    margin: 4px 5px 4px 5px;
 }
 
 .button_muted{
     background-color: var(--secondary-muted-color);
     color: var(--secondary-color);
+    padding: 8px 26px;
 }
 
-.button_size-detailed{
-    margin: 0 26px;
+.button_grayscale{
+    background-color: var(--lightest-grayscale-color);
+    color: var(--hardest-grayscale-color);
+    padding: 4px 10px;
 }
 
 .button:active {
