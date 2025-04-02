@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,35 @@
     <link rel="stylesheet" href="../index.css">
     <title>Document</title>
 </head>
+<script src="https://unpkg.com/feather-icons"></script>
+
 <body>
-    
+    <button class="button bnutton__entrance button_secondary button_secondary button_padding-x button_padding-y">
+        <span class="button_size-entrance">
+            Войти
+        </span>
+    </button>
+    <hr>
+    <button class="button button__icon button_secondary">
+        <i class="button__icon-left" data-feather="menu"></i>
+        <span class="button_padding-x button_padding-y button_size-katalog">
+            Каталог
+        </span>
+    </button>
+    <br>
+    <button class="button button_secondary button__icon">
+        <span class="button_padding-x button_padding-y button_size-filter">Фильтр</span>
+        <i class="button_icon-right" data-feather="x"></i>
+    </button>
+    <br>
+    <button class="button button_muted button_padding-x button_padding-y">
+        <span class="button_size-detailed">
+            Подробнее
+        </span>
+    </button>
+    <script>
+        feather.replace();
+    </script>
 </body>
+
 </html>
