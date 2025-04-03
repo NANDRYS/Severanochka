@@ -22,31 +22,27 @@ body {
     background-color: var(--secondary-color);
 }
 
-.button_size-entrance{
-    margin: 0 17px;
+.button__text-size-entrance{
+    padding: 0 16px;
 }
 
-.button__icon {
+.button_icon {
     display: flex;
     align-items: center;
 }
 
-.button__icon-left {
-    margin: 8px 0px 8px 8px;
+.button__size-catalog {
+    margin: 0 8.5px;
 }
 
-.button_size-catalog {
-    margin: 0 17px;
-}
-
-.button_icon-right {
+.button__icon-right {
     margin: 4px 5px 4px 5px;
 }
 
 .button_muted{
     background-color: var(--secondary-muted-color);
     color: var(--secondary-color);
-    padding: 8px 26px;
+    padding: 8px 32px;
 }
 
 .button_grayscale{
@@ -59,7 +55,7 @@ body {
     padding: 7px 16px;
 }
 
-.button_padding-clear-filter{
+.button__padding-clear-filter{
     padding: 1.5px 19px;
 }
 
@@ -73,17 +69,19 @@ body {
     background-color: var(--primary-color);
 }
 
-.button_apply{
+.button__text-apply{
     padding: 8px 93px;
 }
 
-.button_cart{
-    padding: 0 83px;
-    vertical-align: 8px;
+.button__padding-cart{
+    padding: 0 101.5px;
+    font-size: var(--desc---text---l);
 }
 
-.button_margin-cart{
-    margin: 8px 0px 0px 8px;
+.button__margin-cart{
+    width: 32px;
+    height: 32px;
+    margin: 14px 8px 14px 16px;
 }
 
 .button:active {
