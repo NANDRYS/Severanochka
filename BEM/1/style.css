@@ -13,6 +13,9 @@ body {
 .button_padding-x {
     padding-inline: 8px;
 }
+.button__text-padding {
+    padding-inline: 8px;
+}
 
 .button_padding-y {
     padding-block: 8px;
