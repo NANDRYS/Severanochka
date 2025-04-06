@@ -63,6 +63,7 @@
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     padding: 8px 89px;
+    background-color:var(--blank-color);
 }
 
 .button_primary{
@@ -74,7 +75,7 @@
 }
 
 .button__padding-cart{
-    padding: 0 101.5px;
+    padding: 0 108.5px;
     font-size: var(--desc---text---l);
 }
 
