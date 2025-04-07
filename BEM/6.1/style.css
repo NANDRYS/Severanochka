@@ -1,8 +1,3 @@
-* {
-	line-height: 150%;
-	font-family: var(--font-main);
-}
-
 .banner {
 	display: flex;
 	justify-content: space-between;
@@ -30,10 +25,14 @@
 .banner__title {
 	font-size: var(--desc---text--bold---l);
 	margin-bottom: 6px;
+	font-family: var(--font-main);
+	line-height: var(--line-height-standart);
 }
 
 .banner__text {
 	font-size: var(--desc---text---s);
+	font-family: var(--font-main);
+	line-height: var(--line-height-standart)
 }
 
 .banner__image-forest {
