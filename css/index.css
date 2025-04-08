@@ -1,118 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-body {
-     font-family: 'Rubik', sans-serif;
-     font-size: 24px;
-}
-
-/* Reset and base styles  */
 * {
-     padding: 0px;
-     margin: 0px;
-     border: none;
-}
-
-*,
-*::before,
-*::after {
+     padding: 0;
+     margin: 0;
      box-sizing: border-box;
 }
 
-/* Links */
+:root {
+     
+     /* переменные */
 
-a,
-a:link,
-a:visited {
-     text-decoration: none;
+     --blank-color: #FFFF;
+     --primary-color: #FF6633;
+     --primary-muted-color: #FCD5BA;
+     --secondary-color: #70C05B;
+     --secondary-muted-color: #E5FFDE;
+     --onSurface-color: #414141;
+     --onBackground-color: #291E0F;
+     --BGPage-color: #FBF8EC;
+
+     --lightest-grayscale-color: #F3F2F1;
+     --light-grayscale-color: #BFBFBF;
+     --hard-grayscale-color: #8F8F8F;
+     --hardest-grayscale-color: #606060;
+
+     --onError-color: #F2F2F2;
+     --error-color: #D80000;
+     --error-muted: #FFC7C7;
+     --onSuccess-color: #F2F2F2;
+     --success-color: #008C49;
+     --info-color: #1CB9FC;
+     --warning-color: #FCA21C;
+
+
+     --font-main: "Rubik";
+
+     /* Text-size styles */
+     --desc---text---xs: 12px;
+     --desc---text---s: 16px;
+     --desc---text---m: 18px;
+     --desc---text---l: 24px;
+     --desc---text---xl: 36px;
+     --desc---text--bold---xs: 12px;
+     --desc---text--bold---s: 16px;
+     --desc---text--bold---m: 18px;
+     --desc---text--bold---l: 24px;
+     --desc---text--bold---xl: 36px;
+     --desc---header---xs: 18px;
+     --desc---header---s: 24px;
+     --desc---header---m: 36px;
+     --desc---header---l: 48px;
+     --desc---header---xl: 64px;
+     --mob---text---xs: 8px;
+     --mob---text---s: 12px;
+     --mob---text---m: 14px;
+     --mob---text---l: 20px;
+     --mob---text---xl: 32px;
+     --mob---text-bold---xs: 8px;
+     --mob---text-bold---s: 12px;
+     --mob---text-bold---m: 14px;
+     --mob---text-bold---l: 20px;
+     --mob---text-bold---xl: 32px;
+     --mob---header---xs: 16px;
+     --mob---header---s: 20px;
+     --mob---header---m: 24px;
+     --mob---header---l: 36px;
+     --mob---header---xl: 48px;
+     --vk---header---xl: 96px;
+     --vk---header---l: 72px;
+     --vk----header---m: 64px;
+
+     --line-height-standart: 150%;
 }
-
-a:hover {
-     text-decoration: none;
-}
-
-/* Common */
-
-aside,
-nav,
-footer,
-header,
-section,
-main {
-     display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-     font-size: inherit;
-     font-weight: inherit;
-}
-
-ul,
-ul li {
-     list-style: none;
-}
-
-img {
-     vertical-align: top;
-}
-
-img,
-svg {
-     max-width: 100%;
-     height: auto;
-}
-
-address {
-     font-style: normal;
-}
-
-/* Form */
-
-input,
-textarea,
-button,
-select {
-     font-family: inherit;
-     font-size: inherit;
-     color: inherit;
-     background-color: transparent;
-}
-
-input::-ms-clear {
-     display: none;
-}
-
-button,
-input[type="submit"] {
-     display: inline-block;
-     box-shadow: none;
-     background-color: transparent;
-     background: none;
-     cursor: pointer;
-}
-
-input:focus,
-input:active,
-button:focus,
-button:active {
-     outline: none;
-}
-
-button::-moz-focus-inner {
-     padding: 0;
-     border: 0;
-}
-
-label {
-     cursor: pointer;
-}
-
-legend {
-     display: block;
-}
-
