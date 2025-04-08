@@ -70,14 +70,20 @@
     display: flex;
     gap: 6px;
 }
-.product-main__basket{
-    height: 40px;
-    border-radius: 4px;
-    background-color: var(--primary-color);
+.button {
     color: var(--blank-color);
     font-size: var(--desc---text---s);
-    font-weight: 400;
-    line-height: var(--line-height-standart);
+    border-radius: 4px;
     border: none;
-    cursor: pointer;
+    line-height: var(--line-height-standart);
+    font-family: var( --font-mai);
+}
+.button_padding-y {
+    padding-block: 8px;
+}
+.button_primary{
+    background-color: var(--primary-color);
+}
+.button__text-apply{
+    padding: 8px 93px;
 }
