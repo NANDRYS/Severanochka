@@ -2,11 +2,16 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px 40px;
-	width: 584px;
+	padding: 30px 0px 30px 40px;
+	max-width: 584px;
 	height: 200px;
 	position: relative;
 	border-radius: 4px;
+	overflow: hidden;
+}
+
+.banner_padding {
+	padding-right: 40px;
 }
 
 .banner_primary-muted {
@@ -19,7 +24,9 @@
 }
 
 .banner__content {
-	width: 240px;
+	max-width: 240px;
+	min-width: 182px;
+	margin-right: 20px;
 }
 
 .banner__title {
@@ -35,17 +42,24 @@
 	line-height: var(--line-height-standart)
 }
 
+.banner__image-block {
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+
 .banner__image-forest {
-	width: 207px;
-	height: 138px;
+	max-width: 200px;
 	border-radius: 10px;
 	box-shadow: 0 8px 47px 0 #C85A3582;
-	transform: rotateZ(13.8deg);
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transform: translateY(-50%) rotateZ(13.8deg);
 }
 
 .banner__image-basket {
-	width: 193px;
-	height: 186px;
+	max-width: 200px;
 	position: absolute;
 	top: 14px;
 	right: 42px;
@@ -93,13 +107,13 @@
 .banner__image-plus-small_two {
 	position: absolute;
 	top: 17px;
-	left: 178px;
+	right: 394px;
 }
 
 .banner__image-plus-small_three {
 	position: absolute;
 	bottom: 22px;
-	left: 314px;
+	right: 258px;
 	
 }
 
@@ -124,7 +138,7 @@
 .banner__image-plus-medium_seven {
 	position: absolute;
 	top: 49px;
-	left: 320px;
+	right: 246px;
 }
 
 .banner__image-plus-grow_eight {
@@ -190,3 +204,36 @@
 	top: 14px;
 	right: 169px;
 }
+
+@media screen and (max-width: 770px) {
+	.banner__image-forest-block {
+		min-width: 166px;
+	}
+	.banner__image-basket {
+		min-width: 132px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+/* @media screen and (max-width: 576px) {
+	.banner__image-plus-tiny_one,
+	.banner__image-plus-small_two,
+	.banner__image-plus-small_three,
+	.banner__image-plus-small_four,
+	.banner__image-plus-small_five,
+	.banner__image-plus-small_six,
+	.banner__image-plus-medium_seven,
+	.banner__image-plus-grow_eight,
+	.banner__image-plus-big_nine,
+	.banner__image-plus-titan_ten,
+	.banner__image-ruble-small_one,
+	.banner__image-ruble-medium_two,
+	.banner__image-ruble-big_three,
+	.banner__image-ruble-titan_four {
+		display: none;
+	}
+} */
+
