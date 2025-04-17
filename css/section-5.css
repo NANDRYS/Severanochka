@@ -30,7 +30,7 @@
 	border-radius: 4px;
 	border: none;
 	line-height: var(--line-height-standart);
-	font-family: var( --font-mai);
+	font-family: var(--font-main);
 }
 
 .button_grayscale {
