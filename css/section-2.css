@@ -23,5 +23,5 @@
     font-family: var(--font-main);
     font-weight: bold;
       line-height: var(--line-height-standart);
-    font-size: 38px;}
+    font-size: var(--desc---text---xl);}
  
