@@ -1,7 +1,6 @@
 
 .section-2 {
  margin: 0 auto;
-  width: 100%;
   max-width: 1208px;
   background-image: url("../images/section-2/spots.png");
   background-size: cover; 
@@ -10,7 +9,6 @@
  padding: 0 16px;
 }
 .container {
-  width: 100%;
   max-width: 1208px; 
   margin: 0 auto;
   box-sizing: border-box;
