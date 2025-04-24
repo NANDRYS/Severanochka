@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/section-1.css" />
+  <link rel="stylesheet" href="./css/section-8.css">
   <title>Северяночка</title>
   <link rel="shortcut icon" href="images/light/severanochka-icon.png" />
 </head>
@@ -13,9 +14,27 @@
 
 <body>
   <section class="section-1"></section>
+  <section class="section-8" id="section8Open">
+    <div class="section-8_container">
+      <div class="section-8_container_header">
+        <button class="section-8_button_icon" onclick="closeSection()"><i data-feather="x"></i></button>
+      </div>
+      <div class="section-8_container_main">
+        <h1 class="section-8_h1">Вход</h1>
+        <label class="section-8_label">Телефон</label>
+        <input class="section-8_tel" type="tel">
+        <button class="section-8_button section-8_button_entrance">Вход</button>
+        <div>
+          <button class="section-8_button section-8_button_registration">Регистрация</button>
+          <button class="section-8_button section-8_button_pussword">Забыли пароль?</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 <script src="script.js"></script>
+<script src="./js/entrance.js"></script>
 <script>
   feather.replace();
 </script>
