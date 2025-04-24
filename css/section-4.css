@@ -50,7 +50,6 @@
 .banner__content {
 	max-width: 240px;
 	min-width: 182px;
-	/* margin-right: 20px; */
 }
 
 .banner__title {
@@ -58,12 +57,14 @@
 	margin-bottom: 6px;
 	font-family: var(--font-main);
 	line-height: var(--line-height-standart);
+	color: var(--onSurface-color);
 }
 
 .banner__text {
 	font-size: var(--desc---text---s);
 	font-family: var(--font-main);
-	line-height: var(--line-height-standart)
+	line-height: var(--line-height-standart);
+	color: var(--onSurface-color);
 }
 
 .banner__image-block {
@@ -85,10 +86,10 @@
 .banner__image-basket {
 	max-width: 193px;
 	position: absolute;
-	top: 14px;
-	right: 42px;
-	/* left: 185px; */
+	top: 53%;
+	right: 45px;
 	z-index: 1;
+	transform: translateY(-50%);
 }
 
 /* Стили и позиции плюсиков */
@@ -244,7 +245,7 @@
 
 @media screen and (max-width: 1015px) {
 	.banner__image-basket {
-		left: -65px;
+		left: -72px;
 	}	
 	.banner__image-plus-small_three {
 		left: -95px;
@@ -256,7 +257,7 @@
 		left: 149px; 
 	}
 	.banner__image-plus-small_six {
-		left: 46px; 
+		left: 46px;
 	}	
 	.banner__image-plus-medium_seven {
 		left: -97px;
@@ -307,8 +308,9 @@
 	.banner__image-forest {
 		max-width: 165px;
 	}
-	.bannet__image-basket {
+	.banner__image-basket {
 		max-width: 132px;
+		margin-left: 20px;
 	}
 	.banner__image-plus-tiny {
 		width: 7px;
@@ -317,6 +319,9 @@
 	.banner__image-plus-small {
 		width: 9px;
 		height: 8px;
+	}
+	.banner__image-plus-small_three {
+		bottom: 45px;
 	}
 	.banner__image-plus-medium {
 		width: 14px;
@@ -330,6 +335,9 @@
 		width: 25px;
 		height: 24px;
 	}
+	.banner__image-plus-big_nine {
+		display: none;
+	}
 	.banner__image-plus-titan {
 		width: 31px;
 		height: 30px;
@@ -337,18 +345,34 @@
 	.banner__image-ruble-small {
 		width: 18px;
 		height: 21px;
+		bottom: 47px;
+		left: -43px;
+	}
+	.banner__image-plus-small_six {
+		bottom: 42px;
+		left: 30px;
+	}
+	.banner__image-plus-grow_eight {
+		top: 40px;
+		left: 18px;
 	}
 	.banner__image-ruble-medium {
 		width: 22px;
 		height: 23px;
+		bottom: 45px;
+		left: 53px;
 	}
 	.banner__image-ruble-big {
 		width: 34px;
 		height: 36px;
+		top: 50px;
+		left: 53px;
 	}
 	.banner__image-ruble-titan {
 		width: 37px;
 		height: 38px;
+		top: 42px;
+		left: -41px;
 	}
 }
 
@@ -357,6 +381,12 @@
 		max-width: 240px;
 		min-width: 130px;
 	}
+	.banner__image-plus-small_three,
+	.banner__image-plus-medium_seven,
+	.banner__image-plus-grow_eight {
+		display: none;
+	} 
+
 }
 
 @media screen and (max-width: 360px) {
@@ -370,5 +400,9 @@
 	}
 	.banner {
 		max-width: 100%;
+	}
+	.banner__image-plus-titan_ten {
+		bottom: 70px;
+		left: 70px;
 	}
 }
