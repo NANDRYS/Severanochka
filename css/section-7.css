@@ -14,7 +14,7 @@
     padding-block: 24px;
 }
 
-.section-7__left-wpapper {
+.section-7__left-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -68,13 +68,13 @@
         padding-inline: 16px;
      }
 
-    .section-7__left-wpapper {
+    .section-7__left-wrapper {
         width: 415px;
+        height: 44px;
     }
 
     .section-7__nav {
         width: 311px;
-        gap: 8;
     }
 
     .section-7__right-wrapper {
@@ -87,7 +87,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section-7__left-wpapper {
+    .section-7__left-wrapper {
         display: block;
         width: 100px;
     }
@@ -98,7 +98,6 @@
 
     .section-7__nav {
         width: 304px;
-        gap: 16;
         height: 52px;
         margin-top: 24px;
     }
