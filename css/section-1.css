@@ -1,6 +1,5 @@
 .section-1 {
   display: grid;
-  /* grid-template-columns:152px 140px 375px 65px 42px 49px 95px; */
   grid-template-columns: auto auto auto auto auto auto 95px;
   grid-template-rows: auto auto auto 50px auto auto auto;
   margin: 16px 116px;
@@ -45,6 +44,12 @@
   margin-right: 24px;
   grid-row: span 2;
   padding-top: 26px;
+  text-decoration: none;
+  color: var(--onSurface-color);
+}
+
+.section-1__text:active {
+  transform: translateY(1px);
 }
 
 .section-1__margin {
@@ -54,14 +59,14 @@
 .section-1__heart::after {
   content: url(../images/section-1/Heart.png);
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 14px;
 }
 
 .section-1__box::after {
   content: url(../images/section-1/box.png);
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 7px;
 }
 
@@ -72,7 +77,7 @@
   left: 7px;
 }
 
-.section-1__basket{
+.section-1__basket {
   margin-right: 151.2px;
 }
 
@@ -80,7 +85,7 @@
   transform: translateY(1px);
 }
 
-.section-1-margin-rig {
+.section-1_margin-rig {
   margin-right: 40px;
 }
 
@@ -88,9 +93,46 @@
   margin-right: 16px;
 }
 
-.section-1_icon {
+.section-1__input {
   background-image: url(../images/section-1/search.png);
   background-repeat: no-repeat;
-  background-position: 283px center;
-  padding: 0 139px 0 16px;
+  background-position: 345px center;
+  padding: 0 197px 0 16px;
+}
+
+.section-1__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .section-1 {
+  margin: 16px 20px;
+  }
+  .section-1__img {
+    content: url(../images/section-1/logo768.png);
+    margin-right: 20px;
+  }
+  .section-1_margin-rig, .section-1__basket{
+    margin-right: 20px;
+  }
+  .section-1__text{
+    margin-right: 16px;
+  }
+  .button_ms{
+    content:url(../images/section-1/button768.png)
+  }
+  .button__text-size-entrance{
+    display: none;
+  }
+  .button_ms{
+    background-image: url(../images/section-1/button768.png);
+    background-repeat: no-repeat;
+    width: 39px;
+  }
+  .section-1__input{
+    width: 325px;
+  }
+  .button__size-catalog{
+    display: none;
+  }
 }
