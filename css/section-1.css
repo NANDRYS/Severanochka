@@ -106,33 +106,50 @@
 
 @media screen and (max-width: 768px) {
   .section-1 {
-  margin: 16px 20px;
+    margin: 16px 20px;
   }
   .section-1__img {
     content: url(../images/section-1/logo768.png);
     margin-right: 20px;
   }
-  .section-1_margin-rig, .section-1__basket{
+  .section-1_margin-rig,
+  .section-1__basket {
     margin-right: 20px;
   }
-  .section-1__text{
+  .section-1__text {
     margin-right: 16px;
   }
-  .button_ms{
-    content:url(../images/section-1/button768.png)
+  .button_ms {
+    content: url(../images/section-1/button768.png);
   }
-  .button__text-size-entrance{
+  .button__text-size-entrance {
     display: none;
   }
-  .button_ms{
+  .button_ms {
     background-image: url(../images/section-1/button768.png);
     background-repeat: no-repeat;
     width: 39px;
   }
-  .section-1__input{
+  .section-1__input {
     width: 325px;
+  background-position: 293px center;
+
   }
-  .button__size-catalog{
+  .button__size-catalog {
     display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section-1{
+    margin: 8px 16px;
+  }
+  .section-1__text, .button{
+    display: none;
+  }
+  .section-1__input{
+    width: 261px;
+    background-position: 231px center;
+    padding: 0 0 0 16px;
   }
 }
