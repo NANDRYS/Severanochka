@@ -1,0 +1,123 @@
+*{
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--BGPage-color);
+}
+
+.container{
+    max-width: 1248px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    background-color: var(--BGPage-color);
+}
+.basic-wrapper {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-articles{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 1208px;
+    flex-wrap: wrap;
+}
+
+
+.heading {
+    color: var(--onSurface-color);
+    font-family: var(--font-main);
+    font-weight: bold;
+    line-height: var(--line-height-standart);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading_md {
+    font-size: var(--desc---header---m);
+}
+.heading__link {
+    font-size: var(--desc---text---s);
+    color: var(--hardest-grayscale-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+.heading__chevron-right {
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+
+.article {
+    background-color: var(--blank-color);
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    height: 420px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0px #0000001A;
+}
+
+.article__hover{
+    box-shadow: 4px 8px 16px 0px #FF663333;
+}
+.article__wrapper-top{
+    height: 162px;
+}
+.article__image{
+    height: inherit;
+}
+
+.article__wrapper-center{
+    padding: 10px;
+    display: flex;  
+    flex-direction: column;
+    height: 258px;
+    gap: 10px;
+}
+
+.article__wrapper-bottom {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.article__title{
+    line-height: var(--line-height-standart);
+}
+
+.article__text {
+    line-height: var(--line-height-standart);
+}
+
+.button {
+    color: var(--blank-color);
+    font-size: var(--desc---text---s);
+    border-radius: 4px;
+    border: none;
+    line-height: var(--line-height-standart);
+    font-family: var( --font-main);
+}
+
+.button_muted{
+    background-color: var(--secondary-muted-color);
+    color: var(--secondary-color);
+    padding: 8px 32px;
+    width: 150px;
+}
+
+.button_active {
+    background-color: var(--secondary-color);
+    color: var(--blank-color);
+    padding: 8px 32px;
+    width: 150px;
+}
+
+.text-muted {
+    font-size: var(--desc---text---xs);
+    color:  var(--hard-grayscale-color);
+}
