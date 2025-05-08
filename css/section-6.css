@@ -63,7 +63,7 @@ body {
     box-shadow: 1px 2px 4px 0px #0000001A;
 }
 
-.article__hover{
+.article_hover{
     box-shadow: 4px 8px 16px 0px #FF663333;
 }
 .article__wrapper-top{
