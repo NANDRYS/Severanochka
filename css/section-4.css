@@ -44,7 +44,7 @@
 }
 
 .banner_secondary-muted {
-	background-color: #E5FFDE;
+	background-color: var(--secondary-muted-color);
 }
 
 .banner__content {
