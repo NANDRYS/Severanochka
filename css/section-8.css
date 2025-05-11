@@ -50,14 +50,14 @@
 .section-8_h1 {
     font-size: var(--desc---text---l);
     font-weight: 700;
-    color: #414141;
+    color: var(--onSurface-color);
     text-align: center;
 }
 
 .section-8_label {
     display: block;
     font-size: var(--desc---text---m);
-    color: #8F8F8F;
+    color: var(--hard-grayscale-color);
     margin-top: 32px;
     align-self: flex-start;
     padding-left: 80px;
@@ -103,6 +103,7 @@
     border: none;
     line-height: var(--line-height-standart);
     font-family: var( --font-mai);
+    margin-top: 32px;
 }
 
 .button_secondary-outline{
@@ -112,7 +113,16 @@
     background-color:var(--blank-color);
 }
 
-.section-8_button_pussword {
+.button_grayscale{
+    background-color: var(--lightest-grayscale-color);
     color: var(--hardest-grayscale-color);
-    border: none;
+    font-size: var(--desc---text---s);
+}
+
+.button_no_bg {
+    background-color: #fff;
+}
+
+.button_grayscale-padding{
+    padding: 5px 20px;
 }
