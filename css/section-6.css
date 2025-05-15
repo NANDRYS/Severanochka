@@ -11,21 +11,23 @@ body {
     margin: 0 auto;
     background-color: var(--BGPage-color);
 }
+
 .basic-wrapper {
     margin-top: 120px;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
+
 .wrapper-articles{
     margin-top: 40px;
-    /* margin-left: auto;
-    margin-right: auto; */
     display: flex;
     flex-direction: row;
     gap: 40px;
     max-width: 1208px;
     flex-wrap: wrap;
+    /* align-items: center; */
 }
 
 
@@ -121,7 +123,7 @@ body {
     color:  var(--hard-grayscale-color);
 }
 
-@media screen and (max-width:1300px){
+@media screen and (max-width:1200px){
     .container {
         padding-inline: 16px;
     }
@@ -131,6 +133,10 @@ body {
 
     .container {
         max-width: 992px;
+    }
+
+    .basic-wrapper {
+        width: fit-content;
     }
 
     .article {
