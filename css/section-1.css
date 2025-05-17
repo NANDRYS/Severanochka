@@ -115,7 +115,8 @@
   }
   .button_ms {
     background-image: url(../images/section-1/button768.png);
-    width: 39px;
+    min-width: 39px;
+    margin-right: 27px;
   }
   .section-1__input {
     width: 325px;
