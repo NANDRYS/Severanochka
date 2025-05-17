@@ -1,5 +1,5 @@
 .section-8 {
-    display: none;
+    display: flex;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -85,17 +85,6 @@
     background-color: #fff;
 }
 
-.section-8_button_entrance {
-    width: 260px;
-    height: 68px;
-    background-color: var(--primary-muted-color);
-    color: var(--primary-color);
-    border: none;
-    font-size: var(--desc---text---l);
-    border-radius: 4px;
-    align-items: center;
-}
-
 .button {
     color: var(--blank-color);
     font-size: var(--desc---text---s);
@@ -104,6 +93,17 @@
     line-height: var(--line-height-standart);
     font-family: var( --font-mai);
     margin-top: 32px;
+}
+
+.button_primary-muted {
+    width: 260px;
+    height: 68px;
+    background-color: var(--primary-muted-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: var(--desc---text---l);
+    border-radius: 4px;
+    align-items: center;
 }
 
 .button_secondary-outline{
