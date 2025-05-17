@@ -126,3 +126,12 @@
 .button_grayscale-padding{
     padding: 5px 20px;
 }
+
+@media screen and (max-width: 425px){
+    .section-8_container {
+        width: 340px;
+    }
+    .section-8_label {
+        padding-left: 45px;
+    }
+}
