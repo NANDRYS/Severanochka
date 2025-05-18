@@ -1,7 +1,7 @@
 .section-1_container {
   max-width: 1208px;
   margin: 16px auto;
-  height: 10vh;
+  height: 9wvh;
   display: flex;
 }
 
@@ -96,6 +96,12 @@
   display: none;
 }
 
+@media  screen and (max-width: 1200px) {
+  .section-1_container{
+    padding: 0 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-1_container {
     margin: 16px 20px;
@@ -135,9 +141,13 @@
   .button {
     display: none;
   }
+  .section-1_margin-rig{
+    margin: 0;
+  }
   .section-1__input {
     background-image: url(../images/section-1/search.png);
-    background-position: 190px center;
-    padding: 0 0 0 16px;
+    background-position: 234px center;
+    padding: 0 83px 0 16px;
+    margin-left:20px;
   }
 }
