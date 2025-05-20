@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/section-3.css">
   <link rel="stylesheet" href="css/section-5.css">
   <link rel="stylesheet" href="css/section-7.css">
+  <link rel="stylesheet" href="./css/section-8.css">
   <title>Северяночка</title>
   <link rel="shortcut icon" href="images/light/severanochka-icon.png" />
 </head>
@@ -17,6 +18,7 @@
 
 <body>
   <section class="section-1"></section>
+  
   <section class="section-4">
 	<div class="container">
 		<h2 class="heading heading_md">Специальные предложения</h2>
@@ -618,11 +620,28 @@
           </a>
         </div>
      </div>
+      
+      <section class="section-8" id="section8Open">
+    <div class="section-8_container">
+      <div class="section-8_container_header">
+        <button class="section-8_button_icon" onclick="closeSection()"><i data-feather="x"></i></button>
+      </div>
+      <div class="section-8_container_main">
+        <h1 class="section-8_h1">Вход</h1>
+        <label class="section-8_label">Телефон</label>
+        <input class="section-8_tel" type="tel">
+        <button class="button button_primary-muted">Вход</button>
+        <div>
+          <button class="button button_secondary-outline">Регистрация</button>
+          <button class=" button button_grayscale button_grayscale-padding button_no_bg">Забыли пароль?</button>
+        </div>
+      </div>
     </div>
   </section>
 </body>
 
 <script src="script.js"></script>
+<script src="./js/entrance.js"></script>
 <script>
   feather.replace();
 </script>
