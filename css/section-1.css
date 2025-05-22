@@ -1,8 +1,9 @@
 .section-1_container {
   max-width: 1208px;
   margin: 16px auto;
-  height: 9wvh;
+  height: 9vh;
   display: flex;
+  align-items: center;
 }
 
 .button {
@@ -88,7 +89,7 @@
   background-image: url(../images/section-1/search.png);
   background-repeat: no-repeat;
   background-position: 345px center;
-  padding: 4px 197px 4px 16px;
+  padding: 12px 197px 12px 16px;
   margin: 0 40px 0 16px;
 }
 
