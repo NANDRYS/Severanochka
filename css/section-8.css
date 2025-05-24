@@ -92,6 +92,9 @@
     border: none;
     line-height: var(--line-height-standart);
     font-family: var( --font-mai);
+}
+
+.button_mt28 {
     margin-top: 32px;
 }
 
